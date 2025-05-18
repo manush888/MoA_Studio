@@ -1,0 +1,159 @@
+:root {
+    --gray1: #101010;
+    --gray2: #1E1E1E;
+    --gray3: #2C2C2C;
+    --gray4: #3A3A3A;
+    --gray5: #4A4A4A;
+
+    --tealLight: #1ea4d7;
+    --tealDark: #0f7261;
+}
+
+body {
+    background-color: var(--gray1);
+}
+
+header {
+    background-color: var(--gray2);
+    box-shadow: 0 -10px 20px 20px var(--tealLight);
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav .logo {
+    background: url(./assets/icon_light.png);
+}
+
+header nav .wrapper .p1 {
+    color: #ffffff;
+}
+
+header nav .wrapper .p2 {
+    color: #c9c9c9;
+}
+
+header nav .link {
+    color: #ffffff;
+    background: var(--gray2);
+}
+
+header nav .link:hover {
+    background: var(--tealDark);
+    box-shadow: 0 2px 10px #00000094;
+}
+
+.welcome .container .bg {
+    /*background: url(./assets/gallery/photos/IMG_2107.png);
+    background-size: cover;
+    background-position: top ;
+    background-repeat: no-repeat;*/
+    background: var(--gray3);
+}
+
+.welcome .container .wrapper .h {
+    color: #ffffff;
+}
+
+.welcome .container .wrapper .cursivep {
+    color: #ffffff;
+}
+
+.welcome .container .wrapper .p {
+    color: #c9c9c9;
+}
+
+.welcome .container .checkGallery {
+    background: var(--tealLight);
+    color: #ffffff;
+}
+
+.gallery .container {
+    background: url(./assets/bg_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery .container .wrapper .h {
+    color: #ffffff;
+}
+
+.gallery .container .wrapper .p {
+    color: #ffffff;
+}
+
+.gallery .container a {
+    color: var(--tealLight);
+}
+
+.el {
+    background: var(--tealDark);
+}
+
+.packages .container .h {
+    background: #FFF8DC;
+    color: #000000;
+}
+
+.tier1,
+.tier2,
+.tier3 {
+    background: #29B6F6;
+}
+
+.empty1,
+.empty2,
+.empty3 {
+    background-color: #373737;
+}
+
+.packages .container .el .p {
+    color: #ffffff;
+}
+
+.packages .container .el .price {
+    color: #ffffff;
+}
+
+.packages .container .offer {
+    color: #FF8A80;
+    background: #333333;
+}
+
+.logodetail .container {
+    background: var(--gray3);
+}
+
+.logodetail .h {
+    color: #ffffff;
+}
+
+.logodetail .hp{
+    color: #ffffff;
+}
+
+.logodetail .p{
+    color: #d1d1d1;
+}
+
+.logodetail li {
+    color: #b9b9b9;
+}
+
+.flyersdetail .container {
+    background: var(--gray3);
+}
+
+.flyersdetail .h {
+    color: #ffffff;
+}
+
+.flyersdetail .p{
+    color: #d1d1d1;
+}
+
+.flyersdetail li {
+    color: #b9b9b9;
+}

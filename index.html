@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoA Studio</title>
+    <link rel="stylesheet" href="./dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="./light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./assets/icon_light.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="./assets/icon_dark.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#MoA"><div class="logo"></div></a>
+            <div class="wrapper">
+                <div class="p1">MoA</div>
+                <div class="p2">Studio</div>
+            </div>
+            <a href="#about"><div class="link">About Us</div></a>
+            <a href="#gallery"><div class="link">Gallery</div></a>
+            <a href="#services"><div class="link">Services</div></a>
+            <a href="#contact"><div class="link">Contact</div></a>
+        </nav>
+    </header>
+
+    <div class="main_container">
+
+        <div class="page welcome">
+            <div class="container">
+                <div class="bg"></div>
+                <div class="wrapper">
+                    <div class="h">MoA Studio</div>
+                    <div class="cursivep">"Where 'Your' Imagination Turns Into Reality"</div>
+                    <div class="p">Welcome to MoA Studio, the place that creates creative graphics in Master of Asia. From MoA Studio, you can turn "Your Ideas" into graphics. We specialize in logo design, logo animations, 3D animations, graphic design, and photography.</div>
+                </div>
+                <div class="checkGallery">Check Out</div>
+            </div>
+        </div>
+
+        <div class="page gallery" id="gallery">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="h">Gallery</div>
+                    <div class="p">Discover the passion behind our creations at MoA Studio. <a href=".gallery">Explore our gallery</a> and see how we bring ideas to life.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page packages">
+
+            <div class="container" id="price">
+                <div class="h el">Our Packages</div>
+                <div class="tier1 el">
+                    <div class="p pun">Tier 1</div>
+                    <div class="p pun">Basic</div>
+                </div>
+                <div class="tier2 el">
+                    <div class="p pun">Tier 2</div>
+                    <div class="p pun">Standard</div>
+                </div>
+                <div class="tier3 el">
+                    <div class="p pun">Tier 3</div>
+                    <div class="p pun">Premium</div>
+                </div>
+                <div class="empty1 el"></div>
+                <div class="logodesign el" onclick="scrollToLogo()">
+                    <div class="p">Logo Designing</div>
+                    <div class="price">
+                        <div class="price1 prices">5000 - 7500 LKR</div>
+                        <div class="price2 prices">7500 - 15000 LKR</div>
+                    </div>
+                </div>
+                <div class="empty2 el"></div>
+                <div class="logoanimation el">
+                    <div class="p">Logo Animation</div>
+                    <div class="price">
+                        <div class="price1 prices">10000 - 20000 LKR</div>
+                    </div>
+                </div>
+                <div class="flyers el">
+                    <div class="p">Flyers & Social Media Posts</div>
+                    <div class="price">
+                        <div class="price1 prices">750 - 1500 LKR</div>
+                        <div class="price2 prices">3000 - 50000 LKR</div>
+                    </div>
+                </div>
+                <div class="empty3 el"></div>
+                <div class="photography el">
+                    <div class="p">Photography</div>
+                    <div class="price">
+                        <div class="price1 prices">2000 - 3000 LKR</div>
+                        <div class="price2 prices">4500 - 7000 LKR</div>
+                        <div class="price3 prices">8000 - 20000 LKR</div>
+                    </div>
+                </div>
+                <div class="graphics el">
+                    <div class="p">Graphics Design</div>
+                    <div class="price">
+                        <div class="price1 prices">1500 - 2500 LKR</div>
+                        <div class="price2 prices">3000 - 6000 LKR</div>
+                        <div class="price3 prices">7000 - 20000 LKR</div>
+                    </div>
+                </div>
+                <div class="offer">Offers May Applied!</div>
+            </div>
+        </div>
+
+        <div class="page logodetail">
+            <div class="container" id="logodetail">
+                <div class="h">Logo Designing & Animating</div>
+                
+                <div class="detailedPrice">
+                    <div class="hp">Logo Designing</div>
+                    <div class="content">
+                        <div class="p">Tier 2 (Standard)</div>
+                        <ul>
+                            <li>2–3 initial concepts</li>
+                            <li>2–3 revisions</li>
+                            <li>High-resolution files (.PNG, .JPEG)</li>
+                            <li>Note: If you provide your own concepts or sketches, you can receive a 5–10% discount on the price.</li>
+                        </ul>
+                        <div class="p">Tier 3 (Premium)</div>
+                        <ul>
+                            <li>4–6 custom concepts</li>
+                            <li>Unlimited revisions (within scope)</li>
+                            <li>Full brand kit (color codes, fonts, mockups)</li>
+                            <li>All file types (.PNG, .JPEG, .SVG, .PDF, .AI)</li>
+                            <li>Note: If you provide your own concepts or sketches, you can receive a 10–15% discount on the price.</li>
+                        </ul>
+                    </div>
+
+                    <div class="hp">Logo Animation</div>
+                    <div class="content">
+                        <div class="p">Tier 3 (Premium)</div>
+                        <ul>
+                            <li>1–2 custom animation concepts</li>
+                            <li>Unlimited revisions (within scope)</li>
+                            <li>Delivery in video formats (MP4, MOV, AVI)</li>
+                            <li>Transparent background animations (if requested)</li>
+                            <li>Sound effects or background music (if requested)</li>
+                            <li>Note: If you provide your own concepts, you can receive a 10–20% discount on the price.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page flyersdetail">
+            <div class="container" id="flyersdetail">
+                <div class="h">Flyers & Social Media Posts</div>
+
+                <div class="detailedPrice">
+                    <div class="hp">Flyer / Post Designing</div>
+                    <div class="content">
+                        <div class="p">Tier 1 (Basic)</div>
+                        <ul>
+                            <li>Double-sided flyer/post</li>
+                            <li>2 concepts</li>
+                            <li>3 revisions</li>
+                            <li>Print-ready files (JPEG, PNG, PDF)</li>
+                            <li>Note: Sketches provided by you may receive a 10% discount.</li>
+                        </ul>
+
+                        <div class="p">Tier 2 (Standard)</div>
+                        <ul>
+                            <li>Advanced design + social media post pack</li>
+                            <li>2-4 concepts</li>
+                            <li>Unlimited revisions (within scope)</li>
+                            <li>All source files (AI, PSD) included</li>
+                            <li>Note: Sketches provided by you may receive a 20% discount.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
