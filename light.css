@@ -1,12 +1,12 @@
 :root {
     --gray1: #ffffff;
-    --gray2: #F7F7F7;
-    --gray3: #E0E0E0;
+    --gray2: #e4e4e4;
+    --gray3: #dbdbdb;
     --gray4: #CFCFCF;
-    --gray5: #BDBDBD;
+    --gray5: #373737;
 
-    --tealDark: #1ea4d7;
-    --tealLight: #0f7261;
+    --tealLight: #1ea4d7;
+    --tealDark: #002e41;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: var(--gray2);
+    background-color: var(--gray3);
     box-shadow: 0 -10px 20px 20px var(--tealLight);
 }
 
@@ -36,35 +36,36 @@ header nav .wrapper .p2 {
 
 header nav .link {
     color: #000000;
-    background: var(--gray2);
+    background: var(--gray3);
 }
 
 header nav .link:hover {
-    background: var(--tealDark);
-    box-shadow: 0 2px 10px #00000094;
+    background: var(--tealLight);
+    box-shadow: 1px 2px 10px var(--tealLight);
 }
 
 .welcome .container .bg {
-    background: url(./assets/gallery/photos/IMG_2107.png);
+    /*background: url(./assets/gallery/photos/IMG_2107.png);
     background-size: cover;
     background-position: top ;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background: var(--gray2);
 }
 
 .welcome .container .wrapper .h {
-    color: #ffffff;
+    color: #000000;
 }
 
 .welcome .container .wrapper .cursivep {
-    color: #ffffff;
+    color: #080808;
 }
 
 .welcome .container .wrapper .p {
-    color: #c9c9c9;
+    color: #000000;
 }
 
 .welcome .container .checkGallery {
-    background: var(--tealLight);
+    background: var(--tealDark);
     color: #ffffff;
 }
 
@@ -84,11 +85,11 @@ header nav .link:hover {
 }
 
 .gallery .container a {
-    color: var(--tealLight);
+    color: var(--tealDark);
 }
 
 .el {
-    background: var(--tealDark);
+    background: var(--tealLight);
 }
 
 .packages .container .h {
@@ -99,24 +100,70 @@ header nav .link:hover {
 .tier1,
 .tier2,
 .tier3 {
-    background: var(--tealLight);
+    background: var(--tealDark);
 }
 
 .empty1,
 .empty2,
 .empty3 {
-    background-color: #373737;
+    background-color: var(--gray4);
 }
 
 .packages .container .el .p {
-    color: #000000;
+    color: #ffffff;
 }
 
 .packages .container .el .price {
-    color: #000000;
+    color: #ffffff;
 }
 
 .packages .container .offer {
-    color: #f08285;
-    background: #303030;
+    color: #FF8A80;
+    background: #333333;
+}
+
+.logodetail .container {
+    background: var(--gray2);
+    border: #000000 1px solid;
+}
+
+.logodetail .h {
+    color: #000000;
+}
+
+.logodetail .hp{
+    color: #000000;
+}
+
+.logodetail .p{
+    color: #474747;
+}
+
+.logodetail li {
+    color: #504f4f;
+}
+
+.logodetail li::before {
+    color: #000000;
+}
+
+.flyersdetail .container {
+    background: var(--gray2);
+    border: #000000 1px solid;
+}
+
+.flyersdetail .h {
+    color: #000000;
+}
+
+.flyersdetail .p{
+    color: #474747;
+}
+
+.flyersdetail li {
+    color: #504f4f;
+}
+
+.flyersdetail li::before {
+    color: #000000;
 }

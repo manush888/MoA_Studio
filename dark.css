@@ -6,7 +6,7 @@
     --gray5: #4A4A4A;
 
     --tealLight: #1ea4d7;
-    --tealDark: #0f7261;
+    --tealDark: #002e41;
 }
 
 body {
@@ -93,14 +93,14 @@ header nav .link:hover {
 }
 
 .packages .container .h {
-    background: #FFF8DC;
+    background: #ffffff;
     color: #000000;
 }
 
 .tier1,
 .tier2,
 .tier3 {
-    background: #29B6F6;
+    background: var(--tealLight);
 }
 
 .empty1,
@@ -120,6 +120,10 @@ header nav .link:hover {
 .packages .container .offer {
     color: #FF8A80;
     background: #333333;
+}
+
+.logodetail li::before {
+    color: #d1d1d1;
 }
 
 .logodetail .container {

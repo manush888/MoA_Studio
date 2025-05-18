@@ -28,11 +28,13 @@
     height: calc(100vh - 100px);
     width: 100vw;
     overflow: scroll;
+    z-index: 1;
 }
 
 header {
     height: 100px;
     width: 100%;
+    z-index: 100;
 }
 
 header nav {
@@ -355,7 +357,6 @@ header nav .link:hover {
 
 .logodetail li::before {
     content: "• ";
-    color: #d1d1d1;
 }
 
 .flyersdetail {
@@ -409,5 +410,4 @@ header nav .link:hover {
 
 .flyersdetail li::before {
     content: "• ";
-    color: #d1d1d1;
 }
