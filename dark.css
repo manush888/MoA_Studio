@@ -122,42 +122,26 @@ header nav .link:hover {
     background: #333333;
 }
 
-.logodetail li::before {
+.detail li::before {
     color: #d1d1d1;
 }
 
-.logodetail .container {
+.detail .container {
     background: var(--gray3);
 }
 
-.logodetail .h {
+.detail .h {
     color: #ffffff;
 }
 
-.logodetail .hp{
+.detail .hp{
     color: #ffffff;
 }
 
-.logodetail .p{
+.detail .p{
     color: #d1d1d1;
 }
 
-.logodetail li {
-    color: #b9b9b9;
-}
-
-.flyersdetail .container {
-    background: var(--gray3);
-}
-
-.flyersdetail .h {
-    color: #ffffff;
-}
-
-.flyersdetail .p{
-    color: #d1d1d1;
-}
-
-.flyersdetail li {
+.detail li {
     color: #b9b9b9;
 }

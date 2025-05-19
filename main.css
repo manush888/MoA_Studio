@@ -306,11 +306,11 @@ header nav .link:hover {
     margin-top: 2px;
 }
 
-.logodetail {
+.detail {
     height: fit-content;
 }
 
-.logodetail .container {
+.detail .container {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -318,96 +318,43 @@ header nav .link:hover {
     align-items: start;
 }
 
-.logodetail .hp {
+.detail .hp {
     font-family: sansita;
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.logodetail .container .h {
+.detail .container .h {
     font-family: sansita;
     font-size: 40px;
     margin-bottom: 10px;
     width: fit-content;
 }
 
-.logodetail .content {
+.detail .content {
     margin-bottom: 25px;
 }
 
-.logodetail .p {
+.detail .p {
     font-family: poppins;
     font-size: 22px;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.logodetail ul {
+.detail ul {
     padding-left: 20px;
     list-style: none;
 }
 
-.logodetail li {
+.detail li {
     font-family: poppins;
     font-size: 16px;
     margin: 5px 0;
     line-height: 1.5;
 }
 
-.logodetail li::before {
-    content: "• ";
-}
-
-.flyersdetail {
-    height: fit-content;
-}
-
-.flyersdetail .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    text-align: left;
-    align-items: start;
-}
-
-.flyersdetail .hp {
-    font-family: sansita;
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.flyersdetail .container .h {
-    font-family: sansita;
-    font-size: 40px;
-    margin-bottom: 10px;
-    width: fit-content;
-}
-
-.flyersdetail .content {
-    margin-bottom: 25px;
-}
-
-.flyersdetail .p {
-    font-family: poppins;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.flyersdetail ul {
-    padding-left: 20px;
-    list-style: none;
-}
-
-.flyersdetail li {
-    font-family: poppins;
-    font-size: 16px;
-    margin: 5px 0;
-    line-height: 1.5;
-}
-
-.flyersdetail li::before {
+.detail li::before {
     content: "• ";
 }

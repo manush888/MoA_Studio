@@ -40,8 +40,8 @@ header nav .link {
 }
 
 header nav .link:hover {
-    background: var(--tealLight);
-    box-shadow: 1px 2px 10px var(--tealLight);
+    background: #000000;
+    color: #ffffff;
 }
 
 .welcome .container .bg {
@@ -122,48 +122,28 @@ header nav .link:hover {
     background: #333333;
 }
 
-.logodetail .container {
+.detail .container {
     background: var(--gray2);
     border: #000000 1px solid;
+    box-shadow: inset #000000 0px 0px 0px 0.5px;
 }
 
-.logodetail .h {
+.detail .h {
     color: #000000;
 }
 
-.logodetail .hp{
+.detail .hp{
     color: #000000;
 }
 
-.logodetail .p{
+.detail .p{
     color: #474747;
 }
 
-.logodetail li {
+.detail li {
     color: #504f4f;
 }
 
-.logodetail li::before {
-    color: #000000;
-}
-
-.flyersdetail .container {
-    background: var(--gray2);
-    border: #000000 1px solid;
-}
-
-.flyersdetail .h {
-    color: #000000;
-}
-
-.flyersdetail .p{
-    color: #474747;
-}
-
-.flyersdetail li {
-    color: #504f4f;
-}
-
-.flyersdetail li::before {
+.detail li::before {
     color: #000000;
 }
