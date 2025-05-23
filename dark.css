@@ -5,8 +5,8 @@
     --gray4: #3A3A3A;
     --gray5: #4A4A4A;
 
-    --tealLight: #1ea4d7;
-    --tealDark: #002e41;
+    --tealDark: #1ea4d7;
+    --tealLight: #002e41;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 header {
     background-color: var(--gray2);
-    box-shadow: 0 -10px 20px 20px var(--tealLight);
+    box-shadow: 0 -10px 20px 20px var(--tealDark);
 }
 
 header nav a {
@@ -46,11 +46,11 @@ header nav .link:hover {
 }
 
 .welcome .container .bg {
-    /*background: url(./assets/gallery/photos/IMG_2107.png);
+    background: url(./assets/BG\ land\ dark.png);
     background-size: cover;
-    background-position: top ;
-    background-repeat: no-repeat;*/
-    background: var(--gray3);
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .welcome .container .wrapper .h {
@@ -66,7 +66,7 @@ header nav .link:hover {
 }
 
 .welcome .container .checkGallery {
-    background: var(--tealLight);
+    background: var(--tealDark);
     color: #ffffff;
 }
 
@@ -86,11 +86,11 @@ header nav .link:hover {
 }
 
 .gallery .container a {
-    color: var(--tealLight);
+    color: var(--tealDark);
 }
 
 .el {
-    background: var(--tealDark);
+    background: var(--tealLight);
 }
 
 .packages .container .h {
@@ -101,7 +101,7 @@ header nav .link:hover {
 .tier1,
 .tier2,
 .tier3 {
-    background: var(--tealLight);
+    background: var(--tealDark);
 }
 
 .empty1,
@@ -145,4 +145,54 @@ header nav .link:hover {
 
 .detail li {
     color: #b9b9b9;
+}
+
+hr {
+    border: 1px solid #ffffff;
+}
+
+.con-container {
+    background-color: #ffffff;
+    border: var(--tealDark) 1px solid;
+}
+
+label {
+    color: #000000;
+}
+
+select, input[type="text"], button {
+    border: solid 1px var(--tealDark);
+    color: var(--gray4);
+}
+
+select:focus, input[type="text"]:focus, button:focus {
+    border: solid 1px var(--tealDark);
+}
+
+button {
+    background-color: var(--tealDark);
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: var(--tealLight);
+    color: #ffffff;
+}
+
+.contact h2{
+    color: var(--tealLight);
+}
+
+.contact .container {
+    background: url(./assets/BG\ land\ dark.png);
+    background-size: cover;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.detail .container .back {
+    background: url(./assets/backdark.png);
+    background-size: cover;
+    background-position: center;
 }

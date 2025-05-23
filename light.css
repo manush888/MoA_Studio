@@ -45,11 +45,19 @@ header nav .link:hover {
 }
 
 .welcome .container .bg {
-    /*background: url(./assets/gallery/photos/IMG_2107.png);
+    background: url(./assets/BG\ land.jpg);
     background-size: cover;
     background-position: top ;
-    background-repeat: no-repeat;*/
-    background: var(--gray2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.welcome .container .wrapper {
+    backdrop-filter: blur(5px);
+    border: #000000 1px solid;
+    box-shadow: #000000 0px 0px 3px 0px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .welcome .container .wrapper .h {
@@ -146,4 +154,56 @@ header nav .link:hover {
 
 .detail li::before {
     color: #000000;
+}
+
+hr {
+    border: 1px solid var(--gray4);
+}
+
+.con-container {
+    background-color: var(--gray5);
+    border: var(--tealLight) 1px solid;
+}
+
+label {
+    color: #ffffff;
+}
+
+select, input[type="text"], button {
+    border: solid 1px var(--tealLight);
+    color: var(--gray4);
+    background-color: var(--gray5);
+}
+
+select:focus, input[type="text"]:focus, button:focus {
+    border: solid 1px var(--tealLight);
+    border:none;
+}
+
+button {
+    background-color: var(--tealLight);
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: var(--tealDark);
+    color: #ffffff;
+}
+
+.contact h2{
+    color: var(--tealLight);
+}
+
+.contact .container {
+    background: url(./assets/BG\ land.jpg);
+    background-size: cover;
+    background-position: top ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.detail .container .back {
+    background: url(./assets/back.png);
+    background-size: cover;
+    background-position: center;
 }

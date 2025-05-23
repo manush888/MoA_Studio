@@ -125,6 +125,7 @@ header nav .link:hover {
 
 .welcome .container .wrapper {
     position: absolute;
+    width: calc(100% - 100px);
     max-width: 550px;
     bottom: 100px;
     left: 50px;
@@ -215,6 +216,11 @@ header nav .link:hover {
         "photos photos photos"
         "graphics graphics graphics"
         "offer offer offer";
+}
+
+.packages .container .el hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .el {
@@ -358,4 +364,92 @@ header nav .link:hover {
 
 .detail li::before {
     content: "• ";
+}
+
+.con-container {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    z-index: 1;
+}
+
+label {
+    font-family: sansita;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select, input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: poppins;
+    font-size: 1rem;
+    padding-right: 50px;
+}
+
+select:focus, input[type="text"]:focus, button:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: sansita;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#detailsField {
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 18px;
+}
+
+.contact h2{
+    font-family: sansita;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+	transition: all 0.5s;
+}
+
+.detail .container .back {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px;
 }

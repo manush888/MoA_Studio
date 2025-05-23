@@ -20,8 +20,8 @@
                 <div class="p2">Studio</div>
             </div>
             <a href="#about"><div class="link">About Us</div></a>
-            <a href="#gallery"><div class="link">Gallery</div></a>
-            <a href="#services"><div class="link">Services</div></a>
+            <a href="./gallery/"><div class="link">Gallery</div></a>
+            <a id="chkserv"><div class="link">Services</div></a>
             <a href="#contact"><div class="link">Contact</div></a>
         </nav>
     </header>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="wrapper">
                     <div class="h">Gallery</div>
-                    <div class="p">Discover the passion behind our creations at MoA Studio. <a href=".gallery">Explore our gallery</a> and see how we bring ideas to life.</div>
+                    <div class="p">Discover the passion behind our creations at MoA Studio. <a href="./gallery/">Explore our gallery</a> and see how we bring ideas to life.</div>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <div class="h el">Our Packages</div>
                 <div class="tier1 el">
                     <div class="p pun">Tier 1</div>
-                    <div class="p pun">Basic</div>
+                    <div class="p pun"> Basic </div>
                 </div>
                 <div class="tier2 el">
                     <div class="p pun">Tier 2</div>
@@ -68,6 +68,7 @@
                 <div class="empty1 el"></div>
                 <div class="logodesign el" onclick="scrollToLogo()">
                     <div class="p">Logo Designing</div>
+                    <hr>
                     <div class="price">
                         <div class="price1 prices">5000 - 7500 LKR</div>
                         <div class="price2 prices">7500 - 15000 LKR</div>
@@ -76,12 +77,14 @@
                 <div class="empty2 el"></div>
                 <div class="logoanimation el">
                     <div class="p">Logo Animation</div>
+                    <hr>
                     <div class="price">
                         <div class="price1 prices">10000 - 20000 LKR</div>
                     </div>
                 </div>
                 <div class="flyers el">
                     <div class="p">Flyers & Social Media Posts</div>
+                    <hr>
                     <div class="price">
                         <div class="price1 prices">750 - 1500 LKR</div>
                         <div class="price2 prices">3000 - 50000 LKR</div>
@@ -90,6 +93,7 @@
                 <div class="empty3 el"></div>
                 <div class="photography el">
                     <div class="p">Photography</div>
+                    <hr>
                     <div class="price">
                         <div class="price1 prices">2000 - 3000 LKR</div>
                         <div class="price2 prices">4500 - 7000 LKR</div>
@@ -98,6 +102,7 @@
                 </div>
                 <div class="graphics el">
                     <div class="p">Graphics Design</div>
+                    <hr>
                     <div class="price">
                         <div class="price1 prices">1500 - 2500 LKR</div>
                         <div class="price2 prices">3000 - 6000 LKR</div>
@@ -110,6 +115,7 @@
 
         <div class="page logo detail">
             <div class="container" id="logodetail">
+                <div class="back"></div>
                 <div class="h">Logo Designing & Animating</div>
                 
                 <div class="detailedPrice">
@@ -150,6 +156,7 @@
 
         <div class="page flyers detail">
             <div class="container" id="flyersdetail">
+                <div class="back"></div>
                 <div class="h">Flyers & Social Media Posts</div>
 
                 <div class="detailedPrice">
@@ -178,6 +185,7 @@
 
         <div class="page photography detail">
             <div class="container" id="photographydetail">
+                <div class="back"></div>
                 <div class="h">Photography</div>
                 
                 <div class="detailedPrice">
@@ -216,6 +224,7 @@
 
         <div class="page graphics detail">
             <div class="container" id="graphicsdetail">
+                <div class="back"></div>
                 <div class="h">Graphics Design</div>
 
                 <div class="detailedPrice">
@@ -270,6 +279,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="page contact" id="contact">
+            <div class="container">
+            <div class="con-container">
+                <h2>Contact Us</h2>
+                <label for="method">Choose a method:</label>
+                <select id="method">
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="gmail">Gmail</option>
+                </select>
+        
+                <label for="purpose">Select purpose:</label>
+                <select id="purpose" onchange="toggleDetails()">
+                    <option value="details">For details</option>
+                    <option value="request_service">Requesting a service</option>
+                </select>
+        
+                <label for="service">Select service:</label>
+                <select id="service">
+                    <option value="Logo Designing">Logo Designing</option>
+                    <option value="Logo Animation">Logo Animation</option>
+                    <option value="Flyers & Social Media Posts">Flyers & Social Media Posts</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
+                    <option value="Photography">Photography</option>
+                </select>
+        
+                <div id="detailsField">
+                    <label for="details">Enter details:</label>
+                    <input type="text" id="details">
+                </div>
+        
+                <div class="button-container">
+                    <button onclick="sendMessage()"><p>Submit</p></button>
+                </div>
+            </div>
+            </div>
+            
         </div>
 
     </div>
