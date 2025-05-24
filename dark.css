@@ -9,6 +9,26 @@
     --tealLight: #002e41;
 }
 
+.ham {
+    background: url(./assets/menudark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hammenu {
+    background: #000000;
+}
+
+.hammenuitem {
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+.hammenuitem a {
+    color: #ffffff;
+}
+
 body {
     background-color: var(--gray1);
 }
@@ -46,7 +66,7 @@ header nav .link:hover {
 }
 
 .welcome .container .bg {
-    background: url(./assets/BG\ land\ dark.png);
+    background: url(./assets/BG\ land\ dark.jpg);
     background-size: cover;
     background-position: bottom ;
     background-repeat: no-repeat;
@@ -62,7 +82,7 @@ header nav .link:hover {
 }
 
 .welcome .container .wrapper .p {
-    color: #c9c9c9;
+    color: #e9e9e9;
 }
 
 .welcome .container .checkGallery {
@@ -184,7 +204,7 @@ button:hover {
 }
 
 .contact .container {
-    background: url(./assets/BG\ land\ dark.png);
+    background: url(./assets/BG\ land\ dark.jpg);
     background-size: cover;
     background-position: bottom ;
     background-repeat: no-repeat;

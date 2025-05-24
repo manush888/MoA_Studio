@@ -13,18 +13,28 @@
 <body>
 
     <header>
-        <nav>
-            <a href="#MoA"><div class="logo"></div></a>
+        <nav class="navbar">
+            <a><div class="logo"></div></a>
             <div class="wrapper">
                 <div class="p1">MoA</div>
                 <div class="p2">Studio</div>
             </div>
-            <a href="#about"><div class="link">About Us</div></a>
-            <a href="./gallery/"><div class="link">Gallery</div></a>
-            <a id="chkserv"><div class="link">Services</div></a>
-            <a href="#contact"><div class="link">Contact</div></a>
+            <div class="linkwrap">
+                <!-- <a href="#about"><div class="link">About Us</div></a> -->
+                <!-- <a href="./gallery/"><div class="link">Gallery</div></a> -->
+                <a><div class="link" onclick="toService()">Services</div></a>
+                <a><div class="link" onclick="toContact()">Contact</div></a>
+            </div>
+            <div class="ham"></div>
         </nav>
     </header>
+
+    <div class="hammenu">
+        <!-- <div class="hammenuitem">About Us</div> -->
+        <!-- <div class="hammenuitem"><a href="./gallery/">Gallery</a></div> -->
+        <div class="hammenuitem" id="chkserv" onclick="toService(), toggleMenu()">Services</div>
+        <div class="hammenuitem" onclick="toContact(), toggleMenu()"><a>Contact</a></div>
+    </div>
 
     <div class="main_container">
 
@@ -40,14 +50,14 @@
             </div>
         </div>
 
-        <div class="page gallery" id="gallery">
+        <!-- <div class="page gallery" id="gallery">
             <div class="container">
                 <div class="wrapper">
                     <div class="h">Gallery</div>
                     <div class="p">Discover the passion behind our creations at MoA Studio. <a href="./gallery/">Explore our gallery</a> and see how we bring ideas to life.</div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="page packages">
 
@@ -66,7 +76,7 @@
                     <div class="p pun">Premium</div>
                 </div>
                 <div class="empty1 el"></div>
-                <div class="logodesign el" onclick="scrollToLogo()">
+                <div class="logodesign el" onclick="toLogo()">
                     <div class="p">Logo Designing</div>
                     <hr>
                     <div class="price">
@@ -75,14 +85,14 @@
                     </div>
                 </div>
                 <div class="empty2 el"></div>
-                <div class="logoanimation el">
+                <div class="logoanimation el"  onclick="toLogo()">
                     <div class="p">Logo Animation</div>
                     <hr>
                     <div class="price">
                         <div class="price1 prices">10000 - 20000 LKR</div>
                     </div>
                 </div>
-                <div class="flyers el">
+                <div class="flyers el" onclick="toFlyer()">
                     <div class="p">Flyers & Social Media Posts</div>
                     <hr>
                     <div class="price">
@@ -91,7 +101,7 @@
                     </div>
                 </div>
                 <div class="empty3 el"></div>
-                <div class="photography el">
+                <div class="photography el" onclick="toPhotography()">
                     <div class="p">Photography</div>
                     <hr>
                     <div class="price">
@@ -100,7 +110,7 @@
                         <div class="price3 prices">8000 - 20000 LKR</div>
                     </div>
                 </div>
-                <div class="graphics el">
+                <div class="graphics el" onclick="toGraphics()">
                     <div class="p">Graphics Design</div>
                     <hr>
                     <div class="price">
@@ -113,8 +123,8 @@
             </div>
         </div>
 
-        <div class="page logo detail">
-            <div class="container" id="logodetail">
+        <div class="page logo detail" id="logodetail">
+            <div class="container">
                 <div class="back"></div>
                 <div class="h">Logo Designing & Animating</div>
                 
@@ -154,8 +164,8 @@
             </div>
         </div>
 
-        <div class="page flyers detail">
-            <div class="container" id="flyersdetail">
+        <div class="page flyers detail" id="flyersdetail">
+            <div class="container">
                 <div class="back"></div>
                 <div class="h">Flyers & Social Media Posts</div>
 
@@ -183,8 +193,8 @@
             </div>
         </div>
 
-        <div class="page photography detail">
-            <div class="container" id="photographydetail">
+        <div class="page photography detail" id="photographydetail">
+            <div class="container">
                 <div class="back"></div>
                 <div class="h">Photography</div>
                 
@@ -222,8 +232,8 @@
             </div>
         </div>
 
-        <div class="page graphics detail">
-            <div class="container" id="graphicsdetail">
+        <div class="page graphics detail" id="graphicsdetail">
+            <div class="container">
                 <div class="back"></div>
                 <div class="h">Graphics Design</div>
 
@@ -267,14 +277,14 @@
                             <li>Full book cover (front + back), flat illustration</li>
                             <li>2 concepts, 3 revisions for each</li>
                             <li>Delivered in Print-ready & digital formats</li>
-                            <li>Note: Color palette or layout idea = 10% OFF</li>
+                            <li>Note: Bring us your concepts or sketches and enjoy 10% discount</li>
                         </ul>
                         <div class="p">Tier 3 (Premium)</div>
                         <ul>
                             <li>UI Design set / Complex vector art</li>
                             <li>Multiple screens / components</li>
                             <li>Files: Figma, PSD, SVG</li>
-                            <li>Note: For predefined structure/sketch, we offer 20% discount</li>
+                            <li>Note: Bring us your concepts or sketches and enjoy 20% discount</li>
                         </ul>
                     </div>
                 </div>

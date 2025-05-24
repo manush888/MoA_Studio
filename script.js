@@ -2,6 +2,7 @@ const gallery = document.getElementById('gallery');
 const checkgal = document.querySelector('.checkGallery');
 const services = document.querySelector('.packages');
 const checkserv = document.querySelector('#chkserv');
+const contact = document.querySelector('.contact');
 
 checkgal.addEventListener('click', () => {
     gallery.scrollIntoView({
@@ -11,11 +12,22 @@ checkgal.addEventListener('click', () => {
 });
 
 checkserv.addEventListener('click', () => {
+    toservice();
+});
+
+function toService() {
     services.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     });
-});
+}
+
+function toContact() {
+    contact.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
 
 
 function sendMessage() {
@@ -48,4 +60,58 @@ function toggleDetails() {
     const purpose = document.getElementById("purpose").value;
     const detailsField = document.getElementById("detailsField");
     detailsField.style.display = (purpose === "request_service") ? "block" : "none";
+}
+
+const ham = document.querySelector('.ham');
+const hammenu = document.querySelector('.hammenu');
+
+ham.addEventListener('click', () => {
+    toggleMenu();
+});
+
+function toggleMenu() {
+    hammenu.classList.toggle('hidden');
+}
+
+const backtoservice = document.querySelectorAll('.back');
+backtoservice.forEach(button => {
+    button.addEventListener('click', () => {
+        services.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+const logoDetail = document.querySelector('#logodetail');
+const flyerDetail = document.querySelector('#flyersdetail');
+const photographyDetail = document.querySelector('#photographydetail');
+const graphicsDetail = document.querySelector('#graphicsdetail');
+
+function toLogo() {
+    logoDetail.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });    
+}
+
+function toFlyer() {
+    flyerDetail.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
+function toPhotography() {
+    photographyDetail.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
+function toGraphics() {
+    graphicsDetail.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
 }

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: cursive;
+    font-family: cursivefont;
     src: url(./assets/fonts/DeliciousHandrawn-Regular.ttf);
 }
 
@@ -24,6 +24,54 @@
     display: none;
 }
 
+.ham {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        right: -100px;
+        transition: all 0.5s;
+}
+
+.hammenu {
+    position: absolute;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    top: -100vh;
+    transition: top 0.5s cubic-bezier(0.73, 0, 0, 0.98);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    top: 100px !important;
+}
+
+.hammenuitem {
+    font-family: poppins;
+    font-size: 30px;
+    padding: 10px 20px;
+    text-decoration: underline;
+    transition: all 0.5s;
+    width: 100%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+
+.hammenuitem:nth-child(1) {
+    border-top: none;
+}
+.hammenuitem:last-child {
+    border-bottom: none;
+}
+
+.hammenuitem a {
+    text-decoration: none;
+}
+
 .main_container{
     height: calc(100vh - 100px);
     width: 100vw;
@@ -35,6 +83,7 @@ header {
     height: 100px;
     width: 100%;
     z-index: 100;
+    position: relative;
 }
 
 header nav {
@@ -45,6 +94,8 @@ header nav {
     flex-direction: row;
     gap: 5px;
     padding-right: 20px;
+    position: absolute;
+    overflow: hidden;
 }
 
 header nav a {
@@ -80,6 +131,17 @@ header nav .wrapper .p2 {
     font-family: sansita;
     font-size: 40px;
     margin-top: -20px;
+}
+
+header nav .linkwrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: absolute;
+    right: 25px;
+    transition: all 0.5s cubic-bezier(0.73, 0, 0, 0.98);
 }
 
 header nav .link {
@@ -138,7 +200,7 @@ header nav .link:hover {
 }
 
 .welcome .container .wrapper .cursivep {
-    font-family: cursive;
+    font-family: cursivefont;
     font-size: 25px;
 }
 
@@ -446,10 +508,164 @@ select {
     margin-bottom: 10px;
 }
 
-.hamburger {
-    display: none;
-    font-size: 30px;
-    margin-left: auto;
-    cursor: pointer;
-    padding: 10px;
+@media (max-width: 700px) {
+
+    .linkwrap {
+        right: -500px !important;
+    }
+
+    .ham {
+        right: 25px;
+        transition: all 0.5s;
+    }
+
+    .welcome .container .wrapper {
+        width: calc(100% - 50px);
+        left: 25px;
+    }
+
+    .welcome .container .wrapper .h {
+        font-size: 50px;
+    }
+
+    .welcome .container .wrapper .cursivep {
+        font-size: 30px;
+    }
+
+    .welcome .container .wrapper .p {
+        font-size: 17px;
+    }
+
+    .checkGallery {
+        scale: 0.8;
+    }
+
+    .gallery .container {
+        padding: 20px;
+    }
+
+    .gallery .container .wrapper {
+        width: 100%;
+    }
+
+    .gallery .container .wrapper .h {
+        font-size: 40px;
+    }
+
+    .gallery .container .wrapper .p {
+        font-size: 16px;
+    }
+
+    .packages .container .h {
+        font-size: 40px;
+    }
+
+    .packages .container .el .p {
+        font-size: 20px;
+    }
+
+    .packages .container .el .price {
+        font-size: 16px;
+    }
+
+    .packages .container .offer {
+        font-size: 16px;
+    }
+
+    .detail .container .h {
+        font-size: 30px;
+    }
+
+    .detail .hp {
+        font-size: 25px;
+    }
+
+    .detail .p {
+        font-size: 20px;
+    }
+
+    .detail li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page {
+        padding: 5px;
+    }
+
+    .detail .container {
+        padding: 15px;
+    }
+
+    .welcome {
+        padding: 0;
+        border-radius: 0 ;
+    }
+
+    .welcome .container{
+        width: 100%;
+        border-radius: 0 ;
+    }
+
+    .welcome .container .bg {
+        border-radius: 0;
+    }
+
+    .welcome .container .wrapper {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+
+    .contact {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .contact .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+    }
+    
+    header nav .logo {
+        margin-left: 5px;
+        height: 75px;
+        width: 75px;
+    }
+
+    header nav .wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header nav .wrapper .p1 {
+        font-size: 50px;
+    }
+
+    header nav .wrapper .p2 {
+        font-size: 33px;
+        margin-top: -16px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .welcome .container .wrapper {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+    .welcome .container .wrapper .p {
+        display: none;
+    }
+
+    .contact {
+        height: fit-content;
+    }
+
+    .contact .container {
+        width: 100%;
+        padding: 5px;
+    }
 }

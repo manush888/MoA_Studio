@@ -9,6 +9,26 @@
     --tealDark: #002e41;
 }
 
+.ham {
+    background: url(./assets/menulight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hammenu {
+    background: #ffffff;
+}
+
+.hammenuitem {
+    color: #000000;
+    border: #000000 1px solid;
+}
+
+.hammenuitem a {
+    color: #000000;
+}
+
 body {
     background-color: var(--gray1);
 }
@@ -176,8 +196,7 @@ select, input[type="text"], button {
 }
 
 select:focus, input[type="text"]:focus, button:focus {
-    border: solid 1px var(--tealLight);
-    border:none;
+    border: solid 1px var(--tealDark);
 }
 
 button {
@@ -206,4 +225,13 @@ button:hover {
     background: url(./assets/back.png);
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 320px) {
+
+    .welcome .container .wrapper {
+        backdrop-filter: blur(0px);
+        border: none;
+        box-shadow: none;
+    }
 }
