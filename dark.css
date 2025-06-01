@@ -71,6 +71,7 @@ header nav .link:hover {
     background-position: bottom ;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    filter: blur(15px)
 }
 
 .welcome .container .wrapper .h {
